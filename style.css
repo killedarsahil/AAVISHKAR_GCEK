@@ -1,0 +1,61 @@
+body {
+background-image: url("file:///C:/MAMP/htdocs/gcekfest/GCE_Karad.JPG");
+height: 100%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+h1 {
+    color: white;
+    font-family: Helvetica;
+    font-size: 300%;
+	text-align: center;
+	margin-top: 50px;
+}
+label {
+	font-size:25px;
+	font-family: Helvetica;
+	color: white;
+  width:1000px;
+  display: inline-block;
+  margin-left:50px;
+  
+  margin-right:30px;
+text-align:right;
+  
+}
+input {
+	width:300px;
+	height:25px;
+	margin-right:370px;
+}
+p {
+    padding-left: 2cm;
+}
+.button{
+	margin-top: 60px;
+    margin-left: 76px;
+	border-radius: 10px;
+	border: 2px solid #73AD21;
+	background-color: #e7e7e7;
+	color: black;
+}
+
+#body_bg
+{ 
+background-color:#9F81F7; 
+}
+
+#login-form{ 
+
+background:#A9D0F5; 
+border: 3 px solid #eeeee; 
+padding:9px 9px;
+ width:300px; 
+ border-radius:5px; 
+}
+
+p2 {
+	margin-left:400px;
+	margin-top:400px;
+}

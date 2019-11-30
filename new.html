@@ -1,0 +1,40 @@
+<html>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h3>Administrator  <small>Dodajanje novic</small></h3>
+    </div>
+    <div class="panel panel-info">
+
+        <ul class="list-group">
+<?php
+
+$dbhost = "localhost";
+$dbusername = "xxx";
+$dbpassword = "xxx";
+$database_name = "xxx";
+
+$link = mysql_connect("$dbhost", "$dbusername", "$dbpassword");
+if(!$link){ die('Could not connect: ' . mysql_error());}
+
+$db_selected = mysql_select_db("$database_name",$link);
+if(!$db_selected){ die('Can\'t use foo: ' . mysql_error());}
+
+$query = mysql_query("SELECT naslov FROM novica ORDER BY id DESC")or die(mysql_error());
+
+while ($rows = mysql_fetch_array($query)) { 
+   $naslov = $rows['naslov'];
+   echo "$naslov<br>";
+} 
+
+?>
+
+<?php 
+$content = ob_get_clean();
+require "Template/layout.html.php";
+?>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
